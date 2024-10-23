@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c1c1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #141414;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+header a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #f5f5f5;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2.2em;
+    color: #61dafb;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section General Styles */
+section {
+    padding: 60px 0;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* Skills and Projects Section */
+/* Skills Section */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul li {
+    background: #282828;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: #f5f5f5;
+    transition: background-color 0.3s ease;
+    line-height: 1.5;
+}
+
+.skills ul li:hover {
+    background-color: #353535;
+}
+
+.skills ul li:before {
+    content: "•"; /* Bullet near the text */
+    font-size: 1.5em;
+    color: #61dafb;
+    margin-right: 12px;
+}
+
+/* Mini Projects Section */
+.mini-projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mini-projects ul li {
+    background: #282828;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    color: #f5f5f5;
+    transition: background-color 0.3s ease;
+    line-height: 1.5;
+}
+
+.mini-projects ul li:hover {
+    background-color: #353535;
+}
+
+.mini-projects ul li:before {
+    content: "•"; /* Bullet near the text */
+    font-size: 1.5em;
+    color: #61dafb;
+    margin-right: 12px;
+}
+
+/* Project Cards */
+.mini-projects .work-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282828;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.mini-projects .work-item:hover {
+    background-color: #353535;
+}
+
+.mini-projects .work-item img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.mini-projects .work-item .description {
+    flex: 1;
+}
+
+.mini-projects .work-item h3 {
+    font-size: 1.6em;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.mini-projects .work-item p {
+    font-size: 1.1em;
+    color: #c7c7c7;
+}
+
+.mini-projects .work-item .view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #1c1c1e;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mini-projects .work-item .view-btn:hover {
+    background-color: #4fc0e8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .mini-projects .work-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mini-projects .work-item img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
